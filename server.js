@@ -5,7 +5,9 @@ const app = express();
 
 app.use(cors());
 
-app.get("/", (req, res) => res.json("API Running + CICD no effort"));
+app.get("/", (req, res) =>
+  res.json("API Running + CICD no effort. Little text")
+);
 
 const PORT = process.env.PORT || 5000;
 
